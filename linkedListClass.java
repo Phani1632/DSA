@@ -1,6 +1,3 @@
-
-
-
 public class linkedListClass{
     Node head;
     static class Node{
