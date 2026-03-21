@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Stream;
 
 public class arrayListClass {
     public static void main(String args[]){
@@ -38,11 +37,9 @@ public class arrayListClass {
 
         //Sorting an ArrayList
         Collections.sort(arr);
-        for(string i: arr){
+        for(String i: arr){
             System.out.println(i);
-        }
-
-        
+        }       
 
     }
 }
