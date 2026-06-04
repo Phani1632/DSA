@@ -3,11 +3,6 @@ import java.util.Arrays;
 public class Matrices {
     public static void setZeros(int[][] matrix) {
         int rows = matrix.length;
-        // int [] a = matrix[1];
-        // for(int i:a){
-        // System.out.println(i);
-        // }
-        // System.out.println(rows);
         int columns = matrix[0].length;
         int[][] result = new int[rows][columns];
         for (int i = 0; i < rows; i++) {
