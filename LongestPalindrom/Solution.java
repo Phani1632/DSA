@@ -27,22 +27,20 @@ public class Solution {
                         result = s.substring(left, right + 1);
                     }
                 }
+
+            }
+            if (right < s.length() - 1) {
+                right++;
+            } else {
                 left++;
                 right = left + 1;
-            } else {
-                if (right < s.length() - 1) {
-                    right++;
-                } else {
-                    left++;
-                    right = left + 1;
-                }
             }
         }
-        return result;
+        return result == "" ?  String.valueOf(s.charAt(0)) : result; 
     }
 
     public static void main(String[] args) {
-        String s = "bb";
+        String s = "abcda";
         System.out.println(longestPalindrome(s));
     }
 }
